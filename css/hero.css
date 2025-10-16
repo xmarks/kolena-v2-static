@@ -1,0 +1,229 @@
+/*
+ * Hero Component
+ * BEM Methodology
+ * Block: hero
+ * Matches reference/src/components/Hero.tsx exactly
+ */
+
+/* ===================================
+   Hero Block
+   =================================== */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    padding: var(--spacing-36) 0; /* py-36 = 144px vertical padding */
+    overflow: hidden;
+    background-color: #F9FAFB;
+}
+
+/* Background - matches reference gradient opacity */
+.hero__background {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, hsl(254, 76%, 55%, 0.05) 0%, hsl(165, 61%, 55%, 0.05) 100%);
+    opacity: 0.3;
+}
+
+/* Container - max-w-7xl with px-6 */
+.hero__container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 80rem; /* max-w-7xl = 1280px */
+    margin: 0 auto;
+    padding: 0 var(--spacing-6); /* px-6 = 24px */
+}
+
+/* Content */
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Text Wrapper - max-w-4xl with space-y-8 */
+.hero__text-wrapper {
+    max-width: 56rem; /* max-w-4xl = 896px */
+    animation: fade-up 0.6s ease-out; /* Updated to match tailwind.config.ts */
+}
+
+.hero__text-content {
+    margin-bottom: var(--spacing-8); /* space-y-8 */
+}
+
+/* Title - .text-hero lg:text-6xl */
+.hero__title {
+    font-size: var(--font-5xl); /* text-5xl = 48px (3rem) */
+    font-weight: var(--font-bold);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-6); /* space-y-6 */
+}
+
+.hero__title-gradient {
+    background: var(--gradient-hero);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Description - text-xl max-w-2xl leading-relaxed */
+.hero__description {
+    font-size: var(--font-xl); /* text-xl = 20px (1.25rem) */
+    color: var(--muted-foreground);
+    line-height: var(--leading-relaxed);
+    max-width: 42rem; /* max-w-2xl = 672px */
+    margin: 0 auto;
+}
+
+/* CTA - flex flex-col sm:flex-row gap-4 */
+.hero__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-4);
+}
+
+/* Button - size="lg" with px-8 py-4 */
+.hero__button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    height: 44px; /* h-11 = 44px (2.75rem) */
+    padding: 0 var(--spacing-8); /* px-8 horizontal, height handles vertical */
+    font-size: var(--font-sm); /* text-sm = 14px from button base */
+    font-weight: var(--font-semibold);
+    color: var(--primary-foreground);
+    background-color: var(--primary);
+    border-radius: var(--radius-md); /* rounded-md = 10px */
+    transition: all 0.3s ease;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+    background-color: var(--primary-hover);
+    box-shadow: var(--shadow-xl), 0 0 40px hsl(254, 76%, 55%, 0.2);
+}
+
+.hero__button-icon {
+    width: 20px; /* w-5 h-5 */
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+.hero__button:hover .hero__button-icon {
+    transform: translateX(4px);
+}
+
+/* Trust Indicators - gap-6 pt-4 */
+.hero__trust-indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-6);
+    padding-top: var(--spacing-4);
+}
+
+.hero__badges {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+/* Badge - text-xs px-3 py-1 rounded-full font-medium */
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--spacing-1) var(--spacing-3); /* py-1 px-3 */
+    font-size: var(--font-xs); /* text-xs = 12px */
+    font-weight: var(--font-medium);
+    border-radius: var(--radius-full); /* rounded-full */
+}
+
+.hero__badge--success {
+    background-color: hsl(165, 61%, 55%, 0.1); /* success/10 */
+    color: var(--success);
+}
+
+.hero__badge--primary {
+    background-color: hsl(254, 76%, 55%, 0.1); /* primary/10 */
+    color: var(--primary);
+}
+
+/* Animation - mt-12 with animate-fade-in-delay */
+.hero__animation {
+    width: 100%;
+    margin-top: var(--spacing-12); /* mt-12 = 48px */
+    animation: fade-in 1s ease-out 0.3s both; /* animate-fade-in-delay */
+}
+
+.hero__animation-placeholder {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero__animation-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, hsl(254, 76%, 55%, 0.05) 0%, hsl(165, 61%, 55%, 0.05) 100%);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted-foreground);
+    font-size: var(--font-sm);
+}
+
+.hero__animation-box::before {
+    content: 'Hero Animation Placeholder';
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+/* sm: flex-row (min-width: 640px) */
+@media (min-width: 640px) {
+    .hero__cta {
+        flex-direction: row;
+    }
+}
+
+/* lg: text-6xl (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .hero__title {
+        font-size: var(--font-6xl); /* lg:text-6xl = 60px (3.75rem) */
+    }
+}
+
+/* Mobile adjustments (max-width: 767px) */
+@media (max-width: 767px) {
+    .hero {
+        padding: var(--spacing-20) 0; /* Reduced padding on mobile */
+        min-height: 500px;
+    }
+
+    .hero__title {
+        font-size: 2rem; /* 32px on mobile */
+    }
+
+    .hero__description {
+        font-size: var(--font-base); /* 16px on mobile */
+    }
+
+    .hero__container {
+        padding: 0 var(--spacing-4); /* px-4 on mobile */
+    }
+
+    .hero__badges {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+}

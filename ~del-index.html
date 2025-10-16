@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kolena - Automate document-heavy workflows with AI. Transform document processing with enterprise-grade accuracy and transparency.">
+    <title>Kolena - AI-Powered Document Automation Platform</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/kolena-logo.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/logo-carousel.css">
+    <link rel="stylesheet" href="./css/platform-overview.css">
+    <link rel="stylesheet" href="./css/solutions-grid.css">
+    <link rel="stylesheet" href="./css/social-proof.css">
+    <link rel="stylesheet" href="./css/homepage-cta.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <!-- Navigation Component -->
+    <nav class="navigation">
+        <div class="navigation__container">
+            <!-- Logo -->
+            <a href="/" class="navigation__logo-link">
+                <img src="./assets/kolena-logo.png" alt="Kolena" class="navigation__logo-image">
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <div class="navigation__menu navigation__menu--desktop">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="/product" class="navigation__link">Product</a>
+                    </li>
+                    <li class="navigation__item navigation__item--has-dropdown">
+                        <button class="navigation__link navigation__link--dropdown" data-dropdown="solutions">
+                            Solutions
+                            <svg class="navigation__dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="navigation__dropdown" id="solutions-dropdown">
+                            <a href="/solutions/real-estate" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                                        <path d="M9 22v-4h6v4"></path>
+                                        <path d="M8 6h.01"></path>
+                                        <path d="M16 6h.01"></path>
+                                        <path d="M12 6h.01"></path>
+                                        <path d="M12 10h.01"></path>
+                                        <path d="M12 14h.01"></path>
+                                        <path d="M16 10h.01"></path>
+                                        <path d="M16 14h.01"></path>
+                                        <path d="M8 10h.01"></path>
+                                        <path d="M8 14h.01"></path>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Real Estate</div>
+                                    <p class="navigation__dropdown-description">Property documents and contracts</p>
+                                </div>
+                            </a>
+                            <a href="/solutions/financial-services" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                        <polyline points="17 6 23 6 23 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Financial Services</div>
+                                    <p class="navigation__dropdown-description">Investment memos and compliance testing</p>
+                                </div>
+                            </a>
+                            <a href="/solutions/insurance" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Insurance</div>
+                                    <p class="navigation__dropdown-description">Claims processing and underwriting</p>
+                                </div>
+                            </a>
+                            <a href="/solutions/banking" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="3" y1="22" x2="21" y2="22"></line>
+                                        <line x1="6" y1="18" x2="6" y2="11"></line>
+                                        <line x1="10" y1="18" x2="10" y2="11"></line>
+                                        <line x1="14" y1="18" x2="14" y2="11"></line>
+                                        <line x1="18" y1="18" x2="18" y2="11"></line>
+                                        <polygon points="12 2 20 7 4 7"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Banking</div>
+                                    <p class="navigation__dropdown-description">Lending workflows and UCC filings</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/integrations" class="navigation__link">Integrations</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/use-cases" class="navigation__link">Use Cases</a>
+                    </li>
+                    <li class="navigation__item navigation__item--has-dropdown">
+                        <button class="navigation__link navigation__link--dropdown" data-dropdown="resources">
+                            Resources
+                            <svg class="navigation__dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="navigation__dropdown" id="resources-dropdown">
+                            <a href="https://docs.agents.kolena.com" target="_blank" rel="noopener noreferrer" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Docs</div>
+                                    <p class="navigation__dropdown-description">Technical documentation and guides</p>
+                                </div>
+                            </a>
+                            <a href="/blog" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 3h18v18H3zM21 9H3M21 15H3M12 3v18"></path>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Blog</div>
+                                    <p class="navigation__dropdown-description">Latest news and insights</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="navigation__item navigation__item--has-dropdown">
+                        <button class="navigation__link navigation__link--dropdown" data-dropdown="company">
+                            Company
+                            <svg class="navigation__dropdown-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="navigation__dropdown" id="company-dropdown">
+                            <a href="/about" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">About</div>
+                                    <p class="navigation__dropdown-description">Learn about our mission and team</p>
+                                </div>
+                            </a>
+                            <a href="/contact" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Contact Us</div>
+                                    <p class="navigation__dropdown-description">Get in touch with our team</p>
+                                </div>
+                            </a>
+                            <a href="/careers" class="navigation__dropdown-item">
+                                <div class="navigation__dropdown-icon-wrapper">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                </div>
+                                <div class="navigation__dropdown-content">
+                                    <div class="navigation__dropdown-title">Careers</div>
+                                    <p class="navigation__dropdown-description">Join our growing team</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Desktop CTA Buttons -->
+            <div class="navigation__cta-group navigation__cta-group--desktop">
+                <a href="/request-a-demo/" class="navigation__button navigation__button--secondary">Request Demo</a>
+                <a href="/request-access" class="navigation__button navigation__button--primary">2-Week Free Trial</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navigation__mobile-toggle" aria-label="Toggle mobile menu">
+                <svg class="navigation__mobile-icon navigation__mobile-icon--menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="navigation__mobile-icon navigation__mobile-icon--close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="navigation__mobile-menu">
+            <div class="navigation__mobile-container">
+                <div class="navigation__mobile-links">
+                    <a href="/product" class="navigation__mobile-link">Product</a>
+
+                    <button class="navigation__mobile-link navigation__mobile-link--collapsible" data-mobile-collapse="solutions">
+                        Solutions
+                        <svg class="navigation__mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="navigation__mobile-collapse" id="mobile-solutions">
+                        <a href="/solutions/real-estate" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            </svg>
+                            Real Estate
+                        </a>
+                        <a href="/solutions/financial-services" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            </svg>
+                            Financial Services
+                        </a>
+                        <a href="/solutions/insurance" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            Insurance
+                        </a>
+                        <a href="/solutions/banking" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 20 7 4 7"></polygon>
+                            </svg>
+                            Banking
+                        </a>
+                    </div>
+
+                    <a href="/integrations" class="navigation__mobile-link">Integrations</a>
+                    <a href="/use-cases" class="navigation__mobile-link">Use Cases</a>
+
+                    <button class="navigation__mobile-link navigation__mobile-link--collapsible" data-mobile-collapse="resources">
+                        Resources
+                        <svg class="navigation__mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="navigation__mobile-collapse" id="mobile-resources">
+                        <a href="https://docs.agents.kolena.com" target="_blank" rel="noopener noreferrer" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            </svg>
+                            Docs
+                        </a>
+                        <a href="/blog" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h18v18H3z"></path>
+                            </svg>
+                            Blog
+                        </a>
+                    </div>
+
+                    <button class="navigation__mobile-link navigation__mobile-link--collapsible" data-mobile-collapse="company">
+                        Company
+                        <svg class="navigation__mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="navigation__mobile-collapse" id="mobile-company">
+                        <a href="/about" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                            About
+                        </a>
+                        <a href="/contact" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            </svg>
+                            Contact Us
+                        </a>
+                        <a href="/careers" class="navigation__mobile-sublink">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                            Careers
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navigation__mobile-cta">
+                    <a href="/request-a-demo/" class="navigation__button navigation__button--secondary navigation__button--full">Request Demo</a>
+                    <a href="/request-access" class="navigation__button navigation__button--primary navigation__button--full">2-Week Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__background"></div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__text-wrapper">
+                    <div class="hero__text-content">
+                        <h1 class="hero__title">
+                            Automate Document-Heavy Workflows
+                            <span class="hero__title-gradient">with AI</span>
+                        </h1>
+                        <p class="hero__description">
+                            Kolena turns document workflows into automated operations. Use AI to automatically review, validate, generate, and act on claims, leases, financial packages, and more.
+                        </p>
+                    </div>
+
+                    <div class="hero__cta">
+                        <a href="/request-a-demo/" class="hero__button">
+                            Request a Demo
+                            <svg class="hero__button-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="hero__trust-indicators">
+                        <div class="hero__badges">
+                            <span class="hero__badge hero__badge--success">SOC 2 Compliant</span>
+                            <span class="hero__badge hero__badge--primary">Enterprise Ready</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__animation">
+                    <!-- Placeholder for Hero Animation -->
+                    <div class="hero__animation-placeholder">
+                        <div class="hero__animation-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Carousel Section -->
+    <section class="logo-carousel">
+        <div class="logo-carousel__container">
+            <div class="logo-carousel__header">
+                <p class="logo-carousel__title">Trusted by Industry Leaders</p>
+            </div>
+            <div class="logo-carousel__wrapper">
+                <div class="logo-carousel__track">
+                    <!-- Logos will be dynamically inserted by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview Section -->
+    <section class="platform-overview">
+        <div class="platform-overview__container">
+            <div class="platform-overview__header">
+                <h2 class="platform-overview__title">
+                    From Document Chaos to Clarity — with <span class="platform-overview__title-accent">AI</span>
+                </h2>
+                <p class="platform-overview__description">
+                    Kolena's AI processes thousands of files in seconds with enterprise-grade accuracy, scale, and transparency. Transform your document-heavy workflows into streamlined, automated processes.
+                </p>
+            </div>
+
+            <div class="platform-overview__steps">
+                <!-- Step 1 -->
+                <div class="platform-overview__step">
+                    <div class="platform-overview__step-card">
+                        <div class="platform-overview__step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                        </div>
+                        <div class="platform-overview__step-content">
+                            <h3 class="platform-overview__step-title">Ingest & Route Documents</h3>
+                            <p class="platform-overview__step-description">Ingest PDFs, scans, audio, emails, calls</p>
+                            <p class="platform-overview__step-details">Upload any document type from any source. Our platform handles all formats automatically.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="platform-overview__step platform-overview__step--middle">
+                    <div class="platform-overview__step-card">
+                        <div class="platform-overview__step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                                <path d="M8.5 8.5v.01"></path>
+                                <path d="M16 15.5v.01"></path>
+                                <path d="M12 12v.01"></path>
+                                <path d="M11 17v.01"></path>
+                                <path d="M7 14v.01"></path>
+                            </svg>
+                        </div>
+                        <div class="platform-overview__step-content">
+                            <h3 class="platform-overview__step-title">Automate Analysis & Checks</h3>
+                            <div class="platform-overview__step-chips">
+                                <span class="platform-overview__chip platform-overview__chip--success">Citations ✓</span>
+                                <span class="platform-overview__chip platform-overview__chip--primary">Confidence ✓</span>
+                            </div>
+                            <p class="platform-overview__step-description">AI parses and validates with citations and confidence scores</p>
+                            <p class="platform-overview__step-details">Kolena validates every data point with full transparency and citations.</p>
+                        </div>
+                    </div>
+                    <div class="platform-overview__arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="platform-overview__step">
+                    <div class="platform-overview__step-card">
+                        <div class="platform-overview__step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <div class="platform-overview__step-content">
+                            <h3 class="platform-overview__step-title">Generate Reports, Actions & Integrations</h3>
+                            <p class="platform-overview__step-description">Push results to documents, spreadsheets, CRMs, dashboards</p>
+                            <p class="platform-overview__step-details">Structure results and push them into reports, workflows, systems, dashboards, or trigger next steps</p>
+                        </div>
+                    </div>
+                    <div class="platform-overview__arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="platform-overview__cta">
+                <a href="/product" class="platform-overview__button">
+                    Take the Product Tour
+                    <svg class="platform-overview__button-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Grid Section -->
+    <section class="solutions-grid">
+        <div class="solutions-grid__container">
+            <div class="solutions-grid__header">
+                <h2 class="solutions-grid__title">
+                    Tailored for <span class="solutions-grid__title-accent">Your</span> Workflows
+                </h2>
+                <p class="solutions-grid__description">
+                    Kolena AI adapts to the document-heavy processes in your sector, delivering specialized solutions for maximum efficiency.
+                </p>
+            </div>
+
+            <div class="solutions-grid__grid">
+                <!-- Real Estate Card -->
+                <div class="solutions-grid__card">
+                    <div class="solutions-grid__card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <path d="M9 22v-4h6v4"></path>
+                        </svg>
+                    </div>
+                    <div class="solutions-grid__card-content">
+                        <h3 class="solutions-grid__card-title">Real Estate</h3>
+                        <p class="solutions-grid__card-description">
+                            Automate lease abstraction, due diligence, and affordable housing compliance.
+                        </p>
+                        <ul class="solutions-grid__benefits">
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Lease processing
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Due diligence automation
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Compliance tracking
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/solutions/real-estate" class="solutions-grid__card-link">
+                        Explore Real Estate
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Financial Services Card -->
+                <div class="solutions-grid__card">
+                    <div class="solutions-grid__card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="solutions-grid__card-content">
+                        <h3 class="solutions-grid__card-title">Financial Services</h3>
+                        <p class="solutions-grid__card-description">
+                            Generate investment memos, automate compliance testing, and accelerate due diligence.
+                        </p>
+                        <ul class="solutions-grid__benefits">
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Investment analysis
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Compliance automation
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Risk assessment
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/solutions/financial-services" class="solutions-grid__card-link">
+                        Explore Financial Services
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Insurance Card -->
+                <div class="solutions-grid__card">
+                    <div class="solutions-grid__card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="solutions-grid__card-content">
+                        <h3 class="solutions-grid__card-title">Insurance</h3>
+                        <p class="solutions-grid__card-description">
+                            Streamline loss run analysis and risk profiling for workers' comp underwriting.
+                        </p>
+                        <ul class="solutions-grid__benefits">
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Claims processing
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Risk analysis
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Underwriting support
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/solutions/insurance" class="solutions-grid__card-link">
+                        Explore Insurance
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Banking Card -->
+                <div class="solutions-grid__card">
+                    <div class="solutions-grid__card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="22" x2="21" y2="22"></line>
+                            <polygon points="12 2 20 7 4 7"></polygon>
+                        </svg>
+                    </div>
+                    <div class="solutions-grid__card-content">
+                        <h3 class="solutions-grid__card-title">Banking</h3>
+                        <p class="solutions-grid__card-description">
+                            Automate UCC filings, loan package review, and invoice validation.
+                        </p>
+                        <ul class="solutions-grid__benefits">
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Loan processing
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Document validation
+                            </li>
+                            <li class="solutions-grid__benefit">
+                                <span class="solutions-grid__benefit-dot"></span>
+                                Regulatory compliance
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/solutions/banking" class="solutions-grid__card-link">
+                        Explore Banking
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="social-proof__container">
+            <div class="social-proof__header">
+                <h2 class="social-proof__title">
+                    Trusted by <span class="social-proof__title-accent">Leading Enterprises</span>
+                </h2>
+                <p class="social-proof__description">
+                    Real estate firms, insurers, banks, and financial institutions cut turnaround times by 80%+ with Kolena's AI-powered document automation.
+                </p>
+            </div>
+
+            <div class="social-proof__testimonial">
+                <div class="social-proof__quote-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                    </svg>
+                </div>
+                <blockquote class="social-proof__quote">
+                    "Kolena cut our document processing time by 85% while maintaining perfect accuracy. What used to take our team weeks now happens in hours."
+                </blockquote>
+                <div class="social-proof__author">
+                    <div class="social-proof__author-name">Sarah Chen</div>
+                    <div class="social-proof__author-title">VP of Operations, Gateway Management</div>
+                </div>
+            </div>
+
+            <div class="social-proof__stats">
+                <div class="social-proof__stat">
+                    <div class="social-proof__stat-value social-proof__stat-value--success">80%+</div>
+                    <div class="social-proof__stat-label">Faster Processing</div>
+                </div>
+                <div class="social-proof__stat">
+                    <div class="social-proof__stat-value social-proof__stat-value--primary">99.9%</div>
+                    <div class="social-proof__stat-label">Accuracy Rate</div>
+                </div>
+                <div class="social-proof__stat">
+                    <div class="social-proof__stat-value">1M+</div>
+                    <div class="social-proof__stat-label">Documents Processed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Homepage CTA Section -->
+    <section class="homepage-cta">
+        <div class="homepage-cta__background"></div>
+        <div class="homepage-cta__linework">
+            <svg class="homepage-cta__svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#2F66F5" stop-opacity="0.3" />
+                        <stop offset="50%" stop-color="#46C09A" stop-opacity="0.3" />
+                        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.1" />
+                    </linearGradient>
+                </defs>
+                <g class="homepage-cta__lines">
+                    <path d="M 0 200 Q 200 100, 400 200 T 800 200 T 1200 200 T 1600 200" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.4" />
+                    <path d="M 0 400 Q 300 300, 600 400 T 1200 400 T 1800 400" stroke="url(#lineGradient)" stroke-width="2" fill="none" opacity="0.3" />
+                    <circle cx="400" cy="200" r="4" fill="#2F66F5" opacity="0.5" />
+                    <circle cx="800" cy="200" r="4" fill="#46C09A" opacity="0.5" />
+                    <circle cx="600" cy="400" r="4" fill="#2F66F5" opacity="0.5" />
+                </g>
+            </svg>
+        </div>
+        <div class="homepage-cta__container">
+            <div class="homepage-cta__content">
+                <div class="homepage-cta__header">
+                    <h2 class="homepage-cta__title">Ready to See Kolena in Action?</h2>
+                    <p class="homepage-cta__description">
+                        Try Kolena on your own documents — or let our team walk you through how it fits your workflows. Transform your document processing today.
+                    </p>
+                </div>
+                <div class="homepage-cta__button-wrapper">
+                    <a href="/request-a-demo/" class="homepage-cta__button">Request a Demo</a>
+                </div>
+                <p class="homepage-cta__tagline">Reasoning you can trust. Results you can explain.</p>
+                <div class="homepage-cta__checklist">
+                    <div class="homepage-cta__checklist-item">
+                        <svg class="homepage-cta__check-icon homepage-cta__check-icon--success" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Free 2-week trial</span>
+                    </div>
+                    <div class="homepage-cta__checklist-item">
+                        <svg class="homepage-cta__check-icon homepage-cta__check-icon--primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>No setup fees</span>
+                    </div>
+                    <div class="homepage-cta__checklist-item">
+                        <svg class="homepage-cta__check-icon homepage-cta__check-icon--success" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Enterprise support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <!-- Column 1: Logo and Social -->
+                <div class="footer__column">
+                    <a href="/" class="footer__logo-link">
+                        <img src="./assets/kolena-logo.png" alt="Kolena" class="footer__logo">
+                    </a>
+                    <p class="footer__tagline">Automate document-heavy workflows with AI</p>
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/company/kolena-ai/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/kolenaIO" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@KolenaAI" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Solutions -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Solutions</h3>
+                    <ul class="footer__links">
+                        <li><a href="/solutions/real-estate" class="footer__link">Real Estate</a></li>
+                        <li><a href="/solutions/financial-services" class="footer__link">Financial Services</a></li>
+                        <li><a href="/solutions/insurance" class="footer__link">Insurance</a></li>
+                        <li><a href="/solutions/banking" class="footer__link">Banking</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Resources -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Resources</h3>
+                    <ul class="footer__links">
+                        <li><a href="/blog" class="footer__link">Blog</a></li>
+                        <li>
+                            <a href="/white-papers" class="footer__link">
+                                White Papers
+                                <span class="footer__badge">Coming Soon</span>
+                            </a>
+                        </li>
+                        <li><a href="/docs" class="footer__link">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Company -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="/about" class="footer__link">About</a></li>
+                        <li>
+                            <a href="/careers" class="footer__link">
+                                Careers
+                                <span class="footer__badge">Coming Soon</span>
+                            </a>
+                        </li>
+                        <li><a href="/contact" class="footer__link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Kolena. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/terms" class="footer__legal-link">Terms & Conditions</a>
+                    <a href="/privacy-policy" class="footer__legal-link">Privacy Policy</a>
+                    <a href="/security" class="footer__legal-link">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/navigation.js"></script>
+    <script src="./js/logo-carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+/*
+ * Navigation Component
+ * BEM Methodology
+ * Block: navigation
+ */
+
+/* ===================================
+   Navigation Block
+   =================================== */
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Container - h-16 (64px) from reference Navigation.tsx */
+.navigation__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px; /* h-16 = 64px (4rem) */
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* ===================================
+   Logo
+   =================================== */
+.navigation__logo-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.navigation__logo-image {
+    height: 56px;
+    width: auto;
+}
+
+/* ===================================
+   Desktop Menu
+   =================================== */
+.navigation__menu--desktop {
+    display: none;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__item {
+    position: relative;
+}
+
+.navigation__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 var(--spacing-4);
+    font-size: var(--font-sm);
+    font-weight: var(--font-medium);
+    color: var(--foreground);
+    background-color: var(--background);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+.navigation__link--dropdown {
+    gap: var(--spacing-1);
+}
+
+.navigation__dropdown-icon {
+    transition: transform 0.2s ease;
+}
+
+.navigation__item--has-dropdown.is-open .navigation__dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/* ===================================
+   Dropdown Menu
+   =================================== */
+.navigation__dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 320px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.navigation__item--has-dropdown.is-open .navigation__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navigation__dropdown-item {
+    display: flex;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+.navigation__dropdown-item:hover,
+.navigation__dropdown-item:focus {
+    background-color: var(--accent);
+}
+
+.navigation__dropdown-icon-wrapper {
+    flex-shrink: 0;
+}
+
+.navigation__dropdown-icon-wrapper svg {
+    color: var(--primary);
+}
+
+.navigation__dropdown-content {
+    flex: 1;
+}
+
+.navigation__dropdown-title {
+    font-size: var(--font-sm);
+    font-weight: var(--font-medium);
+    color: var(--foreground);
+    margin-bottom: 2px;
+}
+
+.navigation__dropdown-description {
+    font-size: var(--font-sm);
+    color: var(--muted-foreground);
+    line-height: var(--leading-snug);
+}
+
+/* ===================================
+   CTA Buttons
+   =================================== */
+.navigation__cta-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.navigation__cta-group--desktop {
+    display: none;
+}
+
+.navigation__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 var(--spacing-6);
+    font-size: var(--font-sm);
+    font-weight: var(--font-semibold);
+    border-radius: var(--radius-md);
+    transition: var(--transition-base);
+    white-space: nowrap;
+}
+
+.navigation__button--primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.navigation__button--primary:hover,
+.navigation__button--primary:focus {
+    background-color: var(--primary-hover);
+}
+
+.navigation__button--secondary {
+    background-color: transparent;
+    color: var(--foreground);
+    border: 1px solid var(--border);
+}
+
+.navigation__button--secondary:hover,
+.navigation__button--secondary:focus {
+    background-color: var(--accent);
+}
+
+.navigation__button--full {
+    width: 100%;
+}
+
+/* ===================================
+   Mobile Menu Toggle
+   =================================== */
+.navigation__mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.navigation__mobile-icon {
+    transition: var(--transition-fast);
+}
+
+.navigation__mobile-icon--close {
+    display: none;
+}
+
+.navigation.is-mobile-open .navigation__mobile-icon--menu {
+    display: none;
+}
+
+.navigation.is-mobile-open .navigation__mobile-icon--close {
+    display: block;
+}
+
+/* ===================================
+   Mobile Menu
+   =================================== */
+.navigation__mobile-menu {
+    display: none;
+    border-top: 1px solid var(--border);
+    background-color: var(--background);
+}
+
+.navigation.is-mobile-open .navigation__mobile-menu {
+    display: block;
+}
+
+.navigation__mobile-container {
+    padding: var(--spacing-4) 0;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding-left: var(--spacing-6);
+    padding-right: var(--spacing-6);
+}
+
+.navigation__mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+}
+
+.navigation__mobile-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--spacing-2) 0;
+    font-size: var(--font-sm);
+    font-weight: var(--font-medium);
+    color: var(--foreground);
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.navigation__mobile-link:hover,
+.navigation__mobile-link:focus {
+    color: var(--primary);
+}
+
+.navigation__mobile-link--collapsible {
+    cursor: pointer;
+}
+
+.navigation__mobile-chevron {
+    transition: transform 0.2s ease;
+}
+
+.navigation__mobile-link--collapsible.is-open .navigation__mobile-chevron {
+    transform: rotate(180deg);
+}
+
+/* Mobile Collapse */
+.navigation__mobile-collapse {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: var(--spacing-4);
+    transition: max-height 0.3s ease;
+}
+
+.navigation__mobile-collapse.is-open {
+    max-height: 500px;
+}
+
+.navigation__mobile-sublink {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-1) 0;
+    font-size: var(--font-sm);
+    color: var(--foreground);
+    transition: var(--transition-fast);
+}
+
+.navigation__mobile-sublink:hover,
+.navigation__mobile-sublink:focus {
+    color: var(--primary);
+}
+
+.navigation__mobile-sublink svg {
+    width: 16px;
+    height: 16px;
+}
+
+.navigation__mobile-cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--border);
+}
+
+/* ===================================
+   Desktop Responsive (≥768px)
+   =================================== */
+@media (min-width: 768px) {
+    .navigation__menu--desktop {
+        display: block;
+    }
+
+    .navigation__cta-group--desktop {
+        display: flex;
+    }
+
+    .navigation__mobile-toggle {
+        display: none;
+    }
+
+    .navigation__mobile-menu {
+        display: none !important;
+    }
+}
+
+/* ===================================
+   Mobile Responsive (≤767px)
+   =================================== */
+@media (max-width: 767px) {
+    .navigation__container {
+        padding: 0 var(--spacing-4);
+    }
+
+    .navigation__mobile-container {
+        padding-left: var(--spacing-4);
+        padding-right: var(--spacing-4);
+    }
+}

@@ -1,0 +1,205 @@
+/*
+ * Solutions Grid Component
+ * BEM Methodology
+ * Block: solutions-grid
+ */
+
+/* ===================================
+   Solutions Grid Block
+   =================================== */
+.solutions-grid {
+    padding: 96px 0;
+    background-color: var(--background);
+}
+
+/* Container */
+.solutions-grid__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* Header */
+.solutions-grid__header {
+    text-align: center;
+    margin-bottom: var(--spacing-16);
+}
+
+.solutions-grid__title {
+    font-size: var(--font-3xl);
+    font-weight: var(--font-semibold);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight); /* tracking-tight from .text-section-title */
+    color: var(--foreground);
+    margin-bottom: var(--spacing-6);
+}
+
+.solutions-grid__title-accent {
+    color: var(--primary);
+}
+
+.solutions-grid__description {
+    font-size: var(--font-xl);
+    color: var(--muted-foreground);
+    max-width: 672px;
+    margin: 0 auto;
+}
+
+/* Grid */
+.solutions-grid__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+}
+
+/* Card */
+.solutions-grid__card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-8);
+    transition: var(--transition-base);
+}
+
+.solutions-grid__card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Card Icon */
+.solutions-grid__card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(47, 102, 245, 0.1);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-6);
+    transition: var(--transition-base);
+}
+
+.solutions-grid__card:hover .solutions-grid__card-icon {
+    background-color: rgba(47, 102, 245, 0.2);
+}
+
+.solutions-grid__card-icon svg {
+    color: var(--primary);
+}
+
+/* Card Content */
+.solutions-grid__card-content {
+    flex: 1; /* Allow content to grow and push link to bottom */
+    margin-bottom: var(--spacing-6);
+}
+
+.solutions-grid__card-title {
+    font-size: var(--font-xl);
+    font-weight: var(--font-semibold);
+    color: var(--card-foreground);
+    margin-bottom: var(--spacing-4);
+}
+
+.solutions-grid__card-description {
+    font-size: var(--font-sm);
+    color: var(--muted-foreground);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--spacing-4);
+}
+
+/* Benefits List */
+.solutions-grid__benefits {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.solutions-grid__benefit {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-sm);
+    color: var(--muted-foreground);
+    margin-bottom: var(--spacing-2);
+}
+
+.solutions-grid__benefit-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--success);
+    border-radius: 50%;
+    margin-right: var(--spacing-3);
+    flex-shrink: 0;
+}
+
+/* Card Link */
+.solutions-grid__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    width: 100%;
+    padding: var(--spacing-3);
+    font-weight: var(--font-medium);
+    color: var(--primary);
+    background-color: transparent;
+    border-radius: var(--radius-md);
+    text-align: center;
+    justify-content: center;
+    transition: var(--transition-base);
+}
+
+.solutions-grid__card-link:hover,
+.solutions-grid__card-link:focus {
+    background-color: rgba(47, 102, 245, 0.05);
+}
+
+.solutions-grid__card:hover .solutions-grid__card-link {
+    background-color: rgba(47, 102, 245, 0.1);
+}
+
+.solutions-grid__card-link svg {
+    transition: transform 0.2s ease;
+}
+
+.solutions-grid__card-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (min-width: 768px) {
+    .solutions-grid__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .solutions-grid__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .solutions-grid {
+        padding: var(--spacing-16) 0;
+    }
+
+    .solutions-grid__container {
+        padding: 0 var(--spacing-4);
+    }
+
+    .solutions-grid__header {
+        margin-bottom: var(--spacing-8);
+    }
+
+    .solutions-grid__title {
+        font-size: var(--font-2xl);
+    }
+
+    .solutions-grid__description {
+        font-size: var(--font-base);
+    }
+}
