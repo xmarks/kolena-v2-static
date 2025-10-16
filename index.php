@@ -182,9 +182,14 @@ include './includes/header.php';
                 <!-- Real Estate Card -->
                 <div class="solutions-grid__card">
                     <div class="solutions-grid__card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                            <path d="M9 22v-4h6v4"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                            <path d="M10 6h4"></path>
+                            <path d="M10 10h4"></path>
+                            <path d="M10 14h4"></path>
+                            <path d="M10 18h4"></path>
                         </svg>
                     </div>
                     <div class="solutions-grid__card-content">
@@ -256,8 +261,8 @@ include './includes/header.php';
                 <!-- Insurance Card -->
                 <div class="solutions-grid__card">
                     <div class="solutions-grid__card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         </svg>
                     </div>
                     <div class="solutions-grid__card-content">
@@ -292,8 +297,12 @@ include './includes/header.php';
                 <!-- Banking Card -->
                 <div class="solutions-grid__card">
                     <div class="solutions-grid__card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="3" y1="22" x2="21" y2="22"></line>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="22" y2="22"></line>
+                            <line x1="6" x2="6" y1="18" y2="11"></line>
+                            <line x1="10" x2="10" y1="18" y2="11"></line>
+                            <line x1="14" x2="14" y1="18" y2="11"></line>
+                            <line x1="18" x2="18" y1="18" y2="11"></line>
                             <polygon points="12 2 20 7 4 7"></polygon>
                         </svg>
                     </div>
