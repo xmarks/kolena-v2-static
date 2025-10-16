@@ -2,8 +2,8 @@
 // Page configuration
 $page_title = 'Kolena - AI-Powered Document Automation Platform';
 $meta_description = 'Kolena - Automate document-heavy workflows with AI. Transform document processing with enterprise-grade accuracy and transparency.';
-$additional_css = ['hero', 'logo-carousel', 'platform-overview', 'solutions-grid', 'feature-section', 'social-proof', 'homepage-cta', 'footer'];
-$additional_js = ['logo-carousel'];
+$additional_css = ['hero', 'hero-workflow-animation', 'logo-carousel', 'platform-overview', 'solutions-grid', 'feature-section', 'social-proof', 'homepage-cta', 'footer'];
+$additional_js = ['logo-carousel', 'hero-workflow-animation'];
 
 // Include header
 include './includes/header.php';
@@ -44,9 +44,22 @@ include './includes/header.php';
                 </div>
 
                 <div class="hero__animation">
-                    <!-- Placeholder for Hero Animation -->
-                    <div class="hero__animation-placeholder">
-                        <div class="hero__animation-box"></div>
+                    <!-- Hero Workflow Animation -->
+                    <div class="hero-workflow" id="heroWorkflow">
+                        <!-- Browser Chrome -->
+                        <div class="hero-workflow__chrome">
+                            <div class="hero-workflow__chrome-dot hero-workflow__chrome-dot--red"></div>
+                            <div class="hero-workflow__chrome-dot hero-workflow__chrome-dot--yellow"></div>
+                            <div class="hero-workflow__chrome-dot hero-workflow__chrome-dot--green"></div>
+                            <div class="hero-workflow__chrome-url">agents.kolena.com</div>
+                        </div>
+
+                        <!-- Hero Canvas -->
+                        <div class="hero-workflow__canvas" id="heroCanvas">
+                            <div class="hero-workflow__grid" id="workflowGrid">
+                                <!-- Content will be dynamically inserted by JavaScript -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
