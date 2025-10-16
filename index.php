@@ -2,7 +2,7 @@
 // Page configuration
 $page_title = 'Kolena - AI-Powered Document Automation Platform';
 $meta_description = 'Kolena - Automate document-heavy workflows with AI. Transform document processing with enterprise-grade accuracy and transparency.';
-$additional_css = ['hero', 'logo-carousel', 'platform-overview', 'solutions-grid', 'social-proof', 'homepage-cta', 'footer'];
+$additional_css = ['hero', 'logo-carousel', 'platform-overview', 'solutions-grid', 'reasoning-section', 'prebuilt-workflows-section', 'prompt-optimization-section', 'social-proof', 'homepage-cta', 'footer'];
 $additional_js = ['logo-carousel'];
 
 // Include header
@@ -333,6 +333,87 @@ include './includes/header.php';
                             <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reasoning Section -->
+    <section class="reasoning-section">
+        <div class="reasoning-section__container">
+            <div class="reasoning-section__grid">
+                <!-- Left Visual - appears second on mobile, first on desktop -->
+                <div class="reasoning-section__visual">
+                    <div class="reasoning-section__placeholder">
+                        Reasoning Animation Placeholder
+                    </div>
+                </div>
+
+                <!-- Right Copy - appears first on mobile, second on desktop -->
+                <div class="reasoning-section__content">
+                    <p class="reasoning-section__label">
+                        Reasoning Transparency
+                    </p>
+                    <h3 class="reasoning-section__title">
+                        See the 'why' behind every answer
+                    </h3>
+                    <p class="reasoning-section__description">
+                        Kolena doesn't just give results — it shows its reasoning. Every extraction and insight includes clear explanations and citations you can verify.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Built Workflows Section -->
+    <section class="prebuilt-workflows-section">
+        <div class="prebuilt-workflows-section__container">
+            <div class="prebuilt-workflows-section__grid">
+                <!-- Visual - appears second on mobile and desktop -->
+                <div class="prebuilt-workflows-section__visual">
+                    <div class="prebuilt-workflows-section__placeholder">
+                        Pre-Built Workflows Animation Placeholder
+                    </div>
+                </div>
+
+                <!-- Copy - appears first on mobile and desktop -->
+                <div class="prebuilt-workflows-section__content">
+                    <p class="prebuilt-workflows-section__label">
+                        INDUSTRY-READY AUTOMATION
+                    </p>
+                    <h3 class="prebuilt-workflows-section__title">
+                        Pre-built AI workflows
+                    </h3>
+                    <p class="prebuilt-workflows-section__description">
+                        Get started fast with pre-built automations for real estate, insurance, banking, and finance — easily tailored to your policy, compliance, data, and reporting requirements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prompt Optimization Section -->
+    <section class="prompt-optimization-section">
+        <div class="prompt-optimization-section__container">
+            <div class="prompt-optimization-section__grid">
+                <!-- Visual - appears second on mobile, first on desktop -->
+                <div class="prompt-optimization-section__visual">
+                    <div class="prompt-optimization-section__placeholder">
+                        Prompt Optimization Animation Placeholder
+                    </div>
+                </div>
+
+                <!-- Copy - appears first on mobile, second on desktop -->
+                <div class="prompt-optimization-section__content">
+                    <p class="prompt-optimization-section__label">
+                        Smart Prompt Optimization
+                    </p>
+                    <h3 class="prompt-optimization-section__title">
+                        No prompt engineering required
+                    </h3>
+                    <p class="prompt-optimization-section__description">
+                        Kolena automatically re-writes and optimizes your prompts for clarity and accuracy — so every user gets expert-level results without the learning curve.
+                    </p>
                 </div>
             </div>
         </div>

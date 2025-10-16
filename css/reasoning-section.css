@@ -1,0 +1,109 @@
+/*
+ * Reasoning Section Component
+ * BEM Methodology
+ * Block: reasoning-section
+ */
+
+/* ===================================
+   Reasoning Section Block
+   =================================== */
+.reasoning-section {
+    background-color: rgba(var(--muted), 0.2);
+    padding: 48px 0; /* pt-12 pb-12 = 48px each */
+}
+
+/* Container */
+.reasoning-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* Grid */
+.reasoning-section__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    align-items: center;
+}
+
+/* Visual */
+.reasoning-section__visual {
+    display: flex;
+    justify-content: center;
+    order: 2;
+}
+
+.reasoning-section__placeholder {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, rgba(47, 102, 245, 0.05) 0%, rgba(70, 192, 154, 0.05) 100%);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted-foreground);
+    font-size: var(--font-sm);
+}
+
+/* Content */
+.reasoning-section__content {
+    order: 1;
+}
+
+.reasoning-section__content > * + * {
+    margin-top: var(--spacing-4);
+}
+
+.reasoning-section__label {
+    font-size: var(--font-sm);
+    font-weight: var(--font-semibold);
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.reasoning-section__title {
+    font-size: var(--font-2xl);
+    font-weight: var(--font-bold);
+    color: var(--foreground);
+    line-height: var(--leading-tight);
+}
+
+.reasoning-section__description {
+    font-size: var(--font-base);
+    color: var(--muted-foreground);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (min-width: 768px) {
+    .reasoning-section__container {
+        padding: 0 var(--spacing-4);
+    }
+
+    .reasoning-section__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-12);
+    }
+
+    .reasoning-section__visual {
+        order: 1;
+    }
+
+    .reasoning-section__content {
+        order: 2;
+    }
+
+    .reasoning-section__title {
+        font-size: var(--font-4xl);
+    }
+
+    .reasoning-section__description {
+        font-size: var(--font-lg);
+    }
+}
