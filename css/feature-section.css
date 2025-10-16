@@ -1,26 +1,35 @@
 /*
- * Pre-Built Workflows Section Component
+ * Feature Section Component (Unified)
  * BEM Methodology
- * Block: prebuilt-workflows-section
+ * Block: feature-section
+ * Used for: Reasoning, Pre-Built Workflows, Prompt Optimization sections
  */
 
 /* ===================================
-   Pre-Built Workflows Section Block
+   Feature Section Block
    =================================== */
-.prebuilt-workflows-section {
-    background-color: var(--background);
+.feature-section {
     padding: 48px 0; /* pt-12 pb-12 = 48px each */
 }
 
+/* Background Modifiers */
+.feature-section--muted {
+    background-color: rgba(var(--muted), 0.2);
+}
+
+.feature-section--white {
+    background-color: var(--background);
+}
+
 /* Container */
-.prebuilt-workflows-section__container {
+.feature-section__container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-6);
 }
 
 /* Grid */
-.prebuilt-workflows-section__grid {
+.feature-section__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-8);
@@ -28,13 +37,13 @@
 }
 
 /* Visual */
-.prebuilt-workflows-section__visual {
+.feature-section__visual {
     display: flex;
     justify-content: center;
     order: 2;
 }
 
-.prebuilt-workflows-section__placeholder {
+.feature-section__placeholder {
     width: 100%;
     max-width: 500px;
     aspect-ratio: 1 / 1;
@@ -49,15 +58,15 @@
 }
 
 /* Content */
-.prebuilt-workflows-section__content {
+.feature-section__content {
     order: 1;
 }
 
-.prebuilt-workflows-section__content > * + * {
+.feature-section__content > * + * {
     margin-top: var(--spacing-4);
 }
 
-.prebuilt-workflows-section__label {
+.feature-section__label {
     font-size: var(--font-sm);
     font-weight: var(--font-semibold);
     color: var(--primary);
@@ -65,14 +74,14 @@
     letter-spacing: 0.05em;
 }
 
-.prebuilt-workflows-section__title {
-    font-size: var(--font-3xl);
+.feature-section__title {
+    font-size: var(--font-2xl);
     font-weight: var(--font-bold);
     color: var(--foreground);
     line-height: var(--leading-tight);
 }
 
-.prebuilt-workflows-section__description {
+.feature-section__description {
     font-size: var(--font-base);
     color: var(--muted-foreground);
     line-height: var(--leading-relaxed);
@@ -82,30 +91,38 @@
    Responsive Styles
    =================================== */
 @media (min-width: 768px) {
-    .prebuilt-workflows-section__container {
+    .feature-section__container {
         padding: 0 var(--spacing-4);
     }
 
-    .prebuilt-workflows-section__grid {
+    .feature-section__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-12);
     }
 
-    /* Visual stays at order 2 on desktop */
-    .prebuilt-workflows-section__visual {
-        order: 2;
-    }
-
-    /* Content stays at order 1 on desktop */
-    .prebuilt-workflows-section__content {
-        order: 1;
-    }
-
-    .prebuilt-workflows-section__title {
+    .feature-section__title {
         font-size: var(--font-4xl);
     }
 
-    .prebuilt-workflows-section__description {
+    .feature-section__description {
         font-size: var(--font-lg);
+    }
+
+    /* Modifier: Visual on Left, Content on Right */
+    .feature-section--visual-left .feature-section__visual {
+        order: 1;
+    }
+
+    .feature-section--visual-left .feature-section__content {
+        order: 2;
+    }
+
+    /* Modifier: Content on Left, Visual on Right */
+    .feature-section--visual-right .feature-section__visual {
+        order: 2;
+    }
+
+    .feature-section--visual-right .feature-section__content {
+        order: 1;
     }
 }
