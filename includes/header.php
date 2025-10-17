@@ -48,18 +48,14 @@
                         <div class="navigation__dropdown" id="solutions-dropdown">
                             <a href="/solutions/real-estate" class="navigation__dropdown-item">
                                 <div class="navigation__dropdown-icon-wrapper">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                                        <path d="M9 22v-4h6v4"></path>
-                                        <path d="M8 6h.01"></path>
-                                        <path d="M16 6h.01"></path>
-                                        <path d="M12 6h.01"></path>
-                                        <path d="M12 10h.01"></path>
-                                        <path d="M12 14h.01"></path>
-                                        <path d="M16 10h.01"></path>
-                                        <path d="M16 14h.01"></path>
-                                        <path d="M8 10h.01"></path>
-                                        <path d="M8 14h.01"></path>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                                        <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                                        <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                                        <path d="M10 6h4"></path>
+                                        <path d="M10 10h4"></path>
+                                        <path d="M10 14h4"></path>
+                                        <path d="M10 18h4"></path>
                                     </svg>
                                 </div>
                                 <div class="navigation__dropdown-content">
@@ -81,8 +77,8 @@
                             </a>
                             <a href="/solutions/insurance" class="navigation__dropdown-item">
                                 <div class="navigation__dropdown-icon-wrapper">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                     </svg>
                                 </div>
                                 <div class="navigation__dropdown-content">
@@ -139,8 +135,11 @@
                             </a>
                             <a href="/blog" class="navigation__dropdown-item">
                                 <div class="navigation__dropdown-icon-wrapper">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M3 3h18v18H3zM21 9H3M21 15H3M12 3v18"></path>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+                                        <path d="M18 14h-8"></path>
+                                        <path d="M15 18h-5"></path>
+                                        <path d="M10 6h8v4h-8V6Z"></path>
                                     </svg>
                                 </div>
                                 <div class="navigation__dropdown-content">
@@ -235,8 +234,14 @@
                     </button>
                     <div class="navigation__mobile-collapse" id="mobile-solutions">
                         <a href="/solutions/real-estate" class="navigation__mobile-sublink">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                                <path d="M10 6h4"></path>
+                                <path d="M10 10h4"></path>
+                                <path d="M10 14h4"></path>
+                                <path d="M10 18h4"></path>
                             </svg>
                             Real Estate
                         </a>
@@ -247,8 +252,8 @@
                             Financial Services
                         </a>
                         <a href="/solutions/insurance" class="navigation__mobile-sublink">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                             </svg>
                             Insurance
                         </a>
@@ -277,8 +282,11 @@
                             Docs
                         </a>
                         <a href="/blog" class="navigation__mobile-sublink">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 3h18v18H3z"></path>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+                                <path d="M18 14h-8"></path>
+                                <path d="M15 18h-5"></path>
+                                <path d="M10 6h8v4h-8V6Z"></path>
                             </svg>
                             Blog
                         </a>
