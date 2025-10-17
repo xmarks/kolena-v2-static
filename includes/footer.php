@@ -91,5 +91,10 @@
             <script src="./js/<?php echo $js; ?>.js"></script>
         <?php endforeach; ?>
     <?php endif; ?>
+    <?php if (isset($custom_js) && is_array($custom_js)): ?>
+        <?php foreach ($custom_js as $js): ?>
+            <script src="<?php echo $js; ?>"></script>
+        <?php endforeach; ?>
+    <?php endif; ?>
 </body>
 </html>

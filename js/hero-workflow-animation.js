@@ -308,12 +308,12 @@
             addTimer(setTimeout(() => {
                 showProcessingIndicator();
 
-                // Hide processing and show optimized prompt
+                // Hide processing and show optimized prompt (not result yet!)
                 addTimer(setTimeout(() => {
                     hideProcessingIndicator();
                     showOptimizedPrompt(data);
 
-                    // Show result after optimized prompt
+                    // Show result after optimized prompt is visible for 2.5 seconds
                     addTimer(setTimeout(() => {
                         hideOptimizedPrompt();
 
@@ -349,7 +349,7 @@
                                 moveToNextScenario();
                             }, timing);
                         }, 400));
-                    }, 600));
+                    }, 2500));
                 }, 400));
             }, 100));
         });

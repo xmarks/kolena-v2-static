@@ -57,6 +57,11 @@
     font-size: var(--font-sm);
 }
 
+/* Animation Container - for all feature section animations */
+.feature-section__animation {
+    flex: 1 1 100%;
+}
+
 /* Content */
 .feature-section__content {
     order: 1;

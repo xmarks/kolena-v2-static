@@ -91,6 +91,7 @@
     height: 16px;
     margin-right: 8px;
     flex-shrink: 0;
+    color: hsl(254, 76%, 55%);
 }
 
 .hero-workflow__prompt-text {

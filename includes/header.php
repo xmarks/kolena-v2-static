@@ -17,6 +17,11 @@
             <link rel="stylesheet" href="./css/<?php echo $css; ?>.css">
         <?php endforeach; ?>
     <?php endif; ?>
+    <?php if (isset($custom_css) && is_array($custom_css)): ?>
+        <?php foreach ($custom_css as $css): ?>
+            <link rel="stylesheet" href="<?php echo $css; ?>">
+        <?php endforeach; ?>
+    <?php endif; ?>
 </head>
 <body>
     <!-- Navigation Component -->
