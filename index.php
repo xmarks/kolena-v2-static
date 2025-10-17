@@ -4,8 +4,8 @@ $page_title = 'Kolena - AI-Powered Document Automation Platform';
 $meta_description = 'Kolena - Automate document-heavy workflows with AI. Transform document processing with enterprise-grade accuracy and transparency.';
 $additional_css = ['hero', 'hero-workflow-animation', 'logo-carousel', 'platform-overview', 'solutions-grid', 'feature-section', 'social-proof', 'homepage-cta', 'footer'];
 $additional_js = ['logo-carousel', 'hero-workflow-animation'];
-$custom_css = ['./animations/reasoning/reasoning-animation.css'];
-$custom_js = ['./animations/reasoning/reasoning-animation.js'];
+$custom_css = ['./animations/reasoning/reasoning-animation.css', './animations/pre-built-workflows/pre-built-workflows.css'];
+$custom_js = ['./animations/reasoning/reasoning-animation.js', './animations/pre-built-workflows/pre-built-workflows.js'];
 
 // Include header
 include './includes/header.php';
@@ -384,9 +384,7 @@ include './includes/header.php';
             <div class="feature-section__grid">
                 <!-- Visual - appears second on mobile and desktop -->
                 <div class="feature-section__visual">
-                    <div class="feature-section__placeholder">
-                        Pre-Built Workflows Animation Placeholder
-                    </div>
+                    <div id="preBuiltWorkflowsAnimation" class="feature-section__animation"></div>
                 </div>
 
                 <!-- Copy - appears first on mobile and desktop -->
