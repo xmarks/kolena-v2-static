@@ -5,7 +5,7 @@
                 <!-- Column 1: Logo and Social -->
                 <div class="footer__column">
                     <a href="/" class="footer__logo-link">
-                        <img src="./assets/kolena-logo.png" alt="Kolena" class="footer__logo">
+                        <img src="<?php echo isset($base_path) ? $base_path : './'; ?>assets/kolena-logo.png" alt="Kolena" class="footer__logo">
                     </a>
                     <p class="footer__tagline">Automate document-heavy workflows with AI</p>
                     <div class="footer__social">
@@ -85,10 +85,10 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="./js/navigation.js"></script>
+    <script src="<?php echo isset($base_path) ? $base_path : './'; ?>js/navigation.js"></script>
     <?php if (isset($additional_js) && is_array($additional_js)): ?>
         <?php foreach ($additional_js as $js): ?>
-            <script src="./js/<?php echo $js; ?>.js"></script>
+            <script src="<?php echo isset($base_path) ? $base_path : './'; ?>js/<?php echo $js; ?>.js"></script>
         <?php endforeach; ?>
     <?php endif; ?>
     <?php if (isset($custom_js) && is_array($custom_js)): ?>

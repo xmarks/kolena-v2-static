@@ -1,0 +1,152 @@
+/*
+ * Integrations Grid Component
+ * BEM Methodology
+ * Block: integrations-grid
+ */
+
+/* ===================================
+   Integrations Grid Block
+   =================================== */
+.integrations-grid {
+    padding: 96px 0;
+    background-color: #F9FAFB;
+}
+
+/* Container */
+.integrations-grid__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* Header */
+.integrations-grid__header {
+    text-align: center;
+    margin-bottom: var(--spacing-12);
+}
+
+.integrations-grid__title {
+    font-size: var(--font-4xl);
+    font-weight: var(--font-bold);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-4);
+}
+
+.integrations-grid__subtitle {
+    font-size: var(--font-xl);
+    color: var(--muted-foreground);
+    margin-bottom: var(--spacing-6);
+}
+
+.integrations-grid__description {
+    font-size: var(--font-lg);
+    color: var(--muted-foreground);
+    max-width: 48rem;
+    margin: 0 auto;
+    line-height: var(--leading-relaxed);
+}
+
+/* Logos Grid */
+.integrations-grid__logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-8);
+}
+
+/* Logo Item */
+.integrations-grid__logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-4);
+    animation: fade-in 0.6s ease-out;
+}
+
+.integrations-grid__logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.6);
+    transition: filter 0.3s ease;
+}
+
+.integrations-grid__logo-item:hover .integrations-grid__logo {
+    filter: grayscale(0%) opacity(1);
+}
+
+/* CTA */
+.integrations-grid__cta {
+    text-align: center;
+}
+
+.integrations-grid__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--primary);
+    font-weight: var(--font-medium);
+    font-size: var(--font-base);
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+
+.integrations-grid__link:hover {
+    text-decoration: underline;
+}
+
+.integrations-grid__link-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 767px) {
+    .integrations-grid {
+        padding: 64px 0;
+    }
+
+    .integrations-grid__container {
+        padding: 0 var(--spacing-4);
+    }
+
+    .integrations-grid__title {
+        font-size: var(--font-2xl);
+    }
+
+    .integrations-grid__subtitle {
+        font-size: var(--font-base);
+    }
+
+    .integrations-grid__description {
+        font-size: var(--font-sm);
+    }
+}
+
+@media (min-width: 768px) {
+    .integrations-grid__logos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .integrations-grid__logos {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* Animation delays for logo items */
+.integrations-grid__logo-item:nth-child(1) { animation-delay: 0s; }
+.integrations-grid__logo-item:nth-child(2) { animation-delay: 0.05s; }
+.integrations-grid__logo-item:nth-child(3) { animation-delay: 0.1s; }
+.integrations-grid__logo-item:nth-child(4) { animation-delay: 0.15s; }
+.integrations-grid__logo-item:nth-child(5) { animation-delay: 0.2s; }
+.integrations-grid__logo-item:nth-child(6) { animation-delay: 0.25s; }
+.integrations-grid__logo-item:nth-child(7) { animation-delay: 0.3s; }
+.integrations-grid__logo-item:nth-child(8) { animation-delay: 0.35s; }
+.integrations-grid__logo-item:nth-child(9) { animation-delay: 0.4s; }
+.integrations-grid__logo-item:nth-child(10) { animation-delay: 0.45s; }
+.integrations-grid__logo-item:nth-child(11) { animation-delay: 0.5s; }
+.integrations-grid__logo-item:nth-child(12) { animation-delay: 0.55s; }

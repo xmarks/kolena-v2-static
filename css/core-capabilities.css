@@ -1,0 +1,118 @@
+/*
+ * Core Capabilities Component
+ * BEM Methodology
+ * Block: core-capabilities
+ */
+
+/* ===================================
+   Core Capabilities Block
+   =================================== */
+.core-capabilities {
+    padding: 96px 0;
+    background-color: var(--background);
+}
+
+/* Container */
+.core-capabilities__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* Header */
+.core-capabilities__header {
+    text-align: center;
+    margin-bottom: var(--spacing-12);
+}
+
+.core-capabilities__title {
+    font-size: var(--font-4xl);
+    font-weight: var(--font-bold);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-4);
+}
+
+/* Grid */
+.core-capabilities__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+}
+
+/* Card */
+.core-capabilities__card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-4);
+    box-shadow: var(--shadow-md);
+}
+
+/* Icon Wrapper */
+.core-capabilities__icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-4);
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-lg);
+    background-color: hsl(254, 76%, 55%, 0.1);
+    justify-content: center;
+}
+
+.core-capabilities__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
+}
+
+/* Card Title */
+.core-capabilities__card-title {
+    font-size: var(--font-xl);
+    font-weight: var(--font-semibold);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-3);
+}
+
+/* Card Description */
+.core-capabilities__card-description {
+    font-size: var(--font-base);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-4);
+    line-height: var(--leading-relaxed);
+}
+
+/* Card Details */
+.core-capabilities__card-details {
+    font-size: var(--font-sm);
+    color: var(--muted-foreground);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 767px) {
+    .core-capabilities {
+        padding: 64px 0;
+    }
+
+    .core-capabilities__container {
+        padding: 0 var(--spacing-4);
+    }
+
+    .core-capabilities__title {
+        font-size: var(--font-2xl);
+    }
+
+    .core-capabilities__card-title {
+        font-size: var(--font-lg);
+    }
+}
+
+@media (min-width: 768px) {
+    .core-capabilities__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,116 @@
+/*
+ * Why Teams Choose Component
+ * BEM Methodology
+ * Block: why-teams-choose
+ */
+
+/* ===================================
+   Why Teams Choose Block
+   =================================== */
+.why-teams-choose {
+    padding: 96px 0;
+    background-color: var(--background);
+}
+
+/* Container */
+.why-teams-choose__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* Header */
+.why-teams-choose__header {
+    text-align: center;
+    margin-bottom: var(--spacing-12);
+}
+
+.why-teams-choose__title {
+    font-size: var(--font-4xl);
+    font-weight: var(--font-bold);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-4);
+}
+
+/* Grid */
+.why-teams-choose__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+}
+
+/* Item */
+.why-teams-choose__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-teams-choose__item > * + * {
+    margin-top: var(--spacing-6);
+}
+
+/* Icon Wrapper */
+.why-teams-choose__icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 9999px;
+    background-color: hsl(254, 76%, 55%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-teams-choose__icon {
+    width: 32px;
+    height: 32px;
+    color: var(--primary);
+}
+
+/* Item Title */
+.why-teams-choose__item-title {
+    font-size: var(--font-xl);
+    font-weight: var(--font-semibold);
+    color: var(--foreground);
+}
+
+/* Item Description */
+.why-teams-choose__item-description {
+    font-size: var(--font-base);
+    color: var(--muted-foreground);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 767px) {
+    .why-teams-choose {
+        padding: 64px 0;
+    }
+
+    .why-teams-choose__container {
+        padding: 0 var(--spacing-4);
+    }
+
+    .why-teams-choose__title {
+        font-size: var(--font-2xl);
+    }
+
+    .why-teams-choose__item-title {
+        font-size: var(--font-lg);
+    }
+}
+
+@media (min-width: 768px) {
+    .why-teams-choose__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .why-teams-choose__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

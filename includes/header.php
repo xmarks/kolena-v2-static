@@ -7,14 +7,14 @@
     <title><?php echo isset($page_title) ? $page_title : 'Kolena - AI-Powered Document Automation Platform'; ?></title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/kolena-logo.png">
+    <link rel="icon" type="image/png" href="<?php echo isset($base_path) ? $base_path : './'; ?>assets/kolena-logo.png">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="<?php echo isset($base_path) ? $base_path : './'; ?>css/styles.css">
+    <link rel="stylesheet" href="<?php echo isset($base_path) ? $base_path : './'; ?>css/navigation.css">
     <?php if (isset($additional_css) && is_array($additional_css)): ?>
         <?php foreach ($additional_css as $css): ?>
-            <link rel="stylesheet" href="./css/<?php echo $css; ?>.css">
+            <link rel="stylesheet" href="<?php echo isset($base_path) ? $base_path : './'; ?>css/<?php echo $css; ?>.css">
         <?php endforeach; ?>
     <?php endif; ?>
     <?php if (isset($custom_css) && is_array($custom_css)): ?>
@@ -29,7 +29,7 @@
         <div class="navigation__container">
             <!-- Logo -->
             <a href="/" class="navigation__logo-link">
-                <img src="./assets/kolena-logo.png" alt="Kolena" class="navigation__logo-image">
+                <img src="<?php echo isset($base_path) ? $base_path : './'; ?>assets/kolena-logo.png" alt="Kolena" class="navigation__logo-image">
             </a>
 
             <!-- Desktop Navigation Menu -->

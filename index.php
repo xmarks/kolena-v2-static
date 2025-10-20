@@ -1,5 +1,6 @@
 <?php
 // Page configuration
+$base_path = './';
 $page_title = 'Kolena - AI-Powered Document Automation Platform';
 $meta_description = 'Kolena - Automate document-heavy workflows with AI. Transform document processing with enterprise-grade accuracy and transparency.';
 $additional_css = ['hero', 'hero-workflow-animation', 'logo-carousel', 'platform-overview', 'solutions-grid', 'feature-section', 'social-proof', 'homepage-cta', 'footer'];
@@ -69,7 +70,7 @@ include './includes/header.php';
     </section>
 
     <!-- Logo Carousel Section -->
-    <section class="logo-carousel">
+    <section class="logo-carousel" data-base-path="./">
         <div class="logo-carousel__container">
             <div class="logo-carousel__header">
                 <p class="logo-carousel__title">Trusted by Industry Leaders</p>
