@@ -1,0 +1,83 @@
+/*
+ * Real Estate Integrations Component
+ * BEM Methodology
+ * Block: real-estate-integrations
+ */
+
+/* ===================================
+   Real Estate Integrations Block
+   =================================== */
+.real-estate-integrations {
+    padding: 48px 0;
+    background-color: #F9FAFB;
+}
+
+/* Container */
+.real-estate-integrations__container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+    text-align: center;
+}
+
+/* Header */
+.real-estate-integrations__title {
+    font-size: var(--font-2xl);
+    font-weight: var(--font-bold);
+    color: var(--foreground);
+    margin-bottom: 12px;
+}
+
+.real-estate-integrations__description {
+    color: var(--muted-foreground);
+    font-size: var(--font-base);
+    margin-bottom: var(--spacing-8);
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Logos */
+.real-estate-integrations__logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px 48px;
+}
+
+.real-estate-integrations__logo {
+    height: 32px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.real-estate-integrations__logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 767px) {
+    .real-estate-integrations {
+        padding: 40px 0;
+    }
+
+    .real-estate-integrations__title {
+        font-size: var(--font-xl);
+    }
+
+    .real-estate-integrations__logos {
+        gap: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .real-estate-integrations__logo {
+        height: 40px;
+    }
+}

@@ -1,0 +1,204 @@
+/*
+ * Real Estate Advantage Component (Before/After Comparison)
+ * BEM Methodology
+ * Block: real-estate-advantage
+ */
+
+/* ===================================
+   Real Estate Advantage Block
+   =================================== */
+.real-estate-advantage {
+    padding: 96px 0;
+    background-color: rgba(hsl(220, 14%, 96%), 0.3);
+}
+
+/* Container */
+.real-estate-advantage__container {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+}
+
+/* Header */
+.real-estate-advantage__header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.real-estate-advantage__title {
+    font-size: var(--font-4xl);
+    font-weight: var(--font-bold);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-6);
+}
+
+.real-estate-advantage__description {
+    font-size: var(--font-lg);
+    color: var(--muted-foreground);
+    line-height: var(--leading-relaxed);
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+/* Grid */
+.real-estate-advantage__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+/* Card */
+.real-estate-advantage__card {
+    background-color: var(--card-background);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-8);
+    position: relative;
+    overflow: hidden;
+    animation: fade-in 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+.real-estate-advantage__card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+/* Without Kolena Card */
+.real-estate-advantage__card--without {
+    border-color: rgba(239, 68, 68, 0.5);
+    background-color: rgba(254, 226, 226, 0.5);
+}
+
+/* With Kolena Card */
+.real-estate-advantage__card--with {
+    border-color: hsl(254, 76%, 55%, 0.25);
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-lg);
+    animation-delay: 100ms;
+}
+
+.real-estate-advantage__card--with:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 0 20px rgba(47, 102, 245, 0.08);
+}
+
+/* Badge */
+.real-estate-advantage__badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: var(--font-xs);
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: var(--radius-lg);
+}
+
+.real-estate-advantage__badge--manual {
+    background-color: rgba(254, 226, 226, 1);
+    color: rgb(127, 29, 29);
+}
+
+.real-estate-advantage__badge--ai {
+    background-color: rgba(219, 234, 254, 1);
+    color: rgb(30, 64, 175);
+}
+
+/* Status Icon */
+.real-estate-advantage__status-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+.real-estate-advantage__status-icon--error {
+    color: rgba(248, 113, 113, 1);
+}
+
+.real-estate-advantage__status-icon--success {
+    color: var(--primary);
+}
+
+/* Card Header */
+.real-estate-advantage__card-header {
+    padding-top: 48px;
+    margin-bottom: var(--spacing-4);
+}
+
+.real-estate-advantage__card-title {
+    font-size: var(--font-2xl);
+    font-weight: var(--font-semibold);
+    color: var(--foreground);
+}
+
+/* Card Content */
+.real-estate-advantage__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.real-estate-advantage__feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.real-estate-advantage__feature-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.real-estate-advantage__feature-icon--error {
+    color: rgba(248, 113, 113, 1);
+}
+
+.real-estate-advantage__feature-icon--success {
+    color: var(--primary);
+}
+
+.real-estate-advantage__feature-text {
+    font-size: var(--font-sm);
+    line-height: var(--leading-relaxed);
+}
+
+.real-estate-advantage__feature-text--muted {
+    color: var(--muted-foreground);
+}
+
+.real-estate-advantage__feature-text--bold {
+    font-weight: var(--font-medium);
+    color: var(--foreground);
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 767px) {
+    .real-estate-advantage {
+        padding: 64px 0;
+    }
+
+    .real-estate-advantage__header {
+        margin-bottom: 48px;
+    }
+
+    .real-estate-advantage__title {
+        font-size: var(--font-2xl);
+    }
+
+    .real-estate-advantage__description {
+        font-size: var(--font-base);
+    }
+}
+
+@media (min-width: 768px) {
+    .real-estate-advantage__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

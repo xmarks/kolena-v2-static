@@ -1,43 +1,43 @@
 /*
- * Product CTA Component
+ * Real Estate CTA Component
  * BEM Methodology
- * Block: product-cta
+ * Block: real-estate-cta
  */
 
 /* ===================================
-   Product CTA Block
+   Real Estate CTA Block
    =================================== */
-.product-cta {
+.real-estate-cta {
     position: relative;
     overflow: hidden;
     padding: 96px 0;
 }
 
 /* Background */
-.product-cta__background {
+.real-estate-cta__background {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(47, 102, 245, 0.1) 0%, rgba(70, 192, 154, 0.1) 50%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 /* Linework */
-.product-cta__linework {
+.real-estate-cta__linework {
     position: absolute;
     inset: 0;
     opacity: 0.08;
 }
 
-.product-cta__svg {
+.real-estate-cta__svg {
     width: 100%;
     height: 100%;
 }
 
-.product-cta__lines {
+.real-estate-cta__lines {
     animation: pulse 10s ease-in-out infinite;
 }
 
 /* Container */
-.product-cta__container {
+.real-estate-cta__container {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 var(--spacing-6);
@@ -46,30 +46,30 @@
 }
 
 /* Content */
-.product-cta__content {
+.real-estate-cta__content {
     max-width: 56rem;
     margin: 0 auto;
     text-align: center;
 }
 
-.product-cta__content > * + * {
+.real-estate-cta__content > * + * {
     margin-top: var(--spacing-8);
 }
 
 /* Header */
-.product-cta__header {
+.real-estate-cta__header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-6);
 }
 
-.product-cta__title {
+.real-estate-cta__title {
     font-size: var(--font-4xl);
     font-weight: var(--font-bold);
     color: var(--foreground);
 }
 
-.product-cta__description {
+.real-estate-cta__description {
     font-size: var(--font-xl);
     color: var(--muted-foreground);
     line-height: var(--leading-relaxed);
@@ -78,12 +78,12 @@
 }
 
 /* Button Wrapper */
-.product-cta__button-wrapper {
+.real-estate-cta__button-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.product-cta__button {
+.real-estate-cta__button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -99,13 +99,13 @@
     text-decoration: none;
 }
 
-.product-cta__button:hover {
+.real-estate-cta__button:hover {
     background-color: var(--primary-hover);
     box-shadow: var(--shadow-xl), 0 0 40px hsl(254, 76%, 55%, 0.2);
 }
 
 /* Tagline */
-.product-cta__tagline {
+.real-estate-cta__tagline {
     font-size: var(--font-lg);
     font-weight: var(--font-semibold);
     color: var(--foreground);
@@ -113,7 +113,7 @@
 }
 
 /* Checklist */
-.product-cta__checklist {
+.real-estate-cta__checklist {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,23 +124,23 @@
     padding-top: var(--spacing-6);
 }
 
-.product-cta__checklist-item {
+.real-estate-cta__checklist-item {
     display: flex;
     align-items: center;
     gap: var(--spacing-2);
 }
 
-.product-cta__check-icon {
+.real-estate-cta__check-icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
 }
 
-.product-cta__check-icon--success {
+.real-estate-cta__check-icon--success {
     color: var(--success);
 }
 
-.product-cta__check-icon--primary {
+.real-estate-cta__check-icon--primary {
     color: var(--primary);
 }
 
@@ -148,40 +148,40 @@
    Responsive Styles
    =================================== */
 @media (max-width: 767px) {
-    .product-cta {
+    .real-estate-cta {
         padding: 64px 0;
     }
 
-    .product-cta__container {
+    .real-estate-cta__container {
         padding: 0 var(--spacing-4);
     }
 
-    .product-cta__title {
+    .real-estate-cta__title {
         font-size: var(--font-2xl);
     }
 
-    .product-cta__description {
+    .real-estate-cta__description {
         font-size: var(--font-base);
     }
 
-    .product-cta__button {
+    .real-estate-cta__button {
         padding: 14px 32px;
         font-size: var(--font-base);
     }
 
-    .product-cta__tagline {
+    .real-estate-cta__tagline {
         font-size: var(--font-base);
     }
 }
 
-@media (min-width: 768px) {
-    .product-cta__checklist {
+@media (min-width: 640px) {
+    .real-estate-cta__checklist {
         flex-direction: row;
     }
 }
 
 @media (min-width: 1024px) {
-    .product-cta__title {
+    .real-estate-cta__title {
         font-size: var(--font-5xl);
     }
 }

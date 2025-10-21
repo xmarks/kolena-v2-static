@@ -18,28 +18,30 @@ include '../includes/header.php';
         <div class="product-hero__container">
             <div class="product-hero__content">
                 <div class="product-hero__text-wrapper">
-                    <h1 class="product-hero__title">
-                        AI for Smarter, Faster <span class="product-hero__title-gradient">Business Workflows</span>
-                    </h1>
-                    <p class="product-hero__description">
-                        Kolena AI handles underwriting, lease abstraction, compliance audits, loan validation, and other document workflows with unmatched speed, accuracy, and transparency.
-                    </p>
-                </div>
+                    <div class="product-hero__text-content">
+                        <h1 class="product-hero__title">
+                            AI for Smarter, Faster <span class="product-hero__title-gradient">Business Workflows</span>
+                        </h1>
+                        <p class="product-hero__description">
+                            Kolena AI handles underwriting, lease abstraction, compliance audits, loan validation, and other document workflows with unmatched speed, accuracy, and transparency.
+                        </p>
+                    </div>
 
-                <div class="product-hero__cta">
-                    <a href="/request-a-demo/" class="product-hero__button">
-                        Request a Demo
-                        <svg class="product-hero__button-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
+                    <div class="product-hero__cta">
+                        <a href="/request-a-demo/" class="product-hero__button">
+                            Request a Demo
+                            <svg class="product-hero__button-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
 
-                <div class="product-hero__trust-indicators">
-                    <div class="product-hero__badges">
-                        <span class="product-hero__badge product-hero__badge--success">SOC 2 Compliant</span>
-                        <span class="product-hero__badge product-hero__badge--primary">Enterprise Ready</span>
+                    <div class="product-hero__trust-indicators">
+                        <div class="product-hero__badges">
+                            <span class="product-hero__badge product-hero__badge--success">SOC 2 Compliant</span>
+                            <span class="product-hero__badge product-hero__badge--primary">Enterprise Ready</span>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,13 @@
 /*
- * Product Hero Component
+ * Real Estate Hero Component
  * BEM Methodology
- * Block: product-hero
+ * Block: real-estate-hero
  */
 
 /* ===================================
-   Product Hero Block
+   Real Estate Hero Block
    =================================== */
-.product-hero {
+.real-estate-hero {
     position: relative;
     padding: 144px 0;
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 /* Background */
-.product-hero__background {
+.real-estate-hero__background {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, hsl(254, 76%, 55%, 0.05) 0%, hsl(165, 61%, 55%, 0.05) 100%);
@@ -26,7 +26,7 @@
 }
 
 /* Container */
-.product-hero__container {
+.real-estate-hero__container {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 var(--spacing-6);
@@ -35,7 +35,7 @@
 }
 
 /* Content */
-.product-hero__content {
+.real-estate-hero__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,24 +43,24 @@
 }
 
 /* Text Wrapper */
-.product-hero__text-wrapper {
+.real-estate-hero__text-wrapper {
     max-width: 56rem;
     animation: fade-up 0.6s ease-out;
 }
 
-.product-hero__text-content {
+.real-estate-hero__text-content {
     margin-bottom: var(--spacing-8);
 }
 
 /* Title */
-.product-hero__title {
+.real-estate-hero__title {
     font-size: var(--font-5xl);
     font-weight: var(--font-bold);
     line-height: var(--leading-tight);
     color: var(--foreground);
 }
 
-.product-hero__title-gradient {
+.real-estate-hero__title-gradient {
     background: var(--gradient-hero);
     -webkit-background-clip: text;
     background-clip: text;
@@ -68,7 +68,7 @@
 }
 
 /* Description */
-.product-hero__description {
+.real-estate-hero__description {
     font-size: var(--font-xl);
     line-height: var(--leading-relaxed);
     color: var(--muted-foreground);
@@ -77,13 +77,15 @@
 }
 
 /* CTA */
-.product-hero__cta {
+.real-estate-hero__cta {
     display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
     justify-content: center;
     margin-top: var(--spacing-8);
 }
 
-.product-hero__button {
+.real-estate-hero__button {
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-2);
@@ -98,18 +100,18 @@
     text-decoration: none;
 }
 
-.product-hero__button:hover {
+.real-estate-hero__button:hover {
     background-color: var(--primary-hover);
     box-shadow: var(--shadow-xl), 0 0 40px hsl(254, 76%, 55%, 0.2);
 }
 
-.product-hero__button-icon {
+.real-estate-hero__button-icon {
     width: 20px;
     height: 20px;
 }
 
 /* Trust Indicators */
-.product-hero__trust-indicators {
+.real-estate-hero__trust-indicators {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,25 +120,25 @@
     margin-top: var(--spacing-4);
 }
 
-.product-hero__badges {
+.real-estate-hero__badges {
     display: flex;
     gap: var(--spacing-4);
     font-size: var(--font-xs);
     color: var(--muted-foreground);
 }
 
-.product-hero__badge {
+.real-estate-hero__badge {
     padding: 4px 12px;
     border-radius: 9999px;
     font-weight: var(--font-medium);
 }
 
-.product-hero__badge--success {
+.real-estate-hero__badge--success {
     background-color: hsl(165, 61%, 55%, 0.1);
     color: var(--success);
 }
 
-.product-hero__badge--primary {
+.real-estate-hero__badge--primary {
     background-color: hsl(254, 76%, 55%, 0.1);
     color: var(--primary);
 }
@@ -145,36 +147,42 @@
    Responsive Styles
    =================================== */
 @media (max-width: 767px) {
-    .product-hero {
+    .real-estate-hero {
         padding: 96px 0;
         min-height: 500px;
     }
 
-    .product-hero__container {
+    .real-estate-hero__container {
         padding: 0 var(--spacing-4);
     }
 
-    .product-hero__title {
+    .real-estate-hero__title {
         font-size: var(--font-3xl);
     }
 
-    .product-hero__description {
+    .real-estate-hero__description {
         font-size: var(--font-base);
     }
 
-    .product-hero__button {
+    .real-estate-hero__button {
         padding: 14px 24px;
         font-size: var(--font-sm);
     }
 
-    .product-hero__badges {
+    .real-estate-hero__badges {
         flex-direction: column;
         align-items: center;
     }
 }
 
+@media (min-width: 768px) {
+    .real-estate-hero__cta {
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 1024px) {
-    .product-hero__title {
+    .real-estate-hero__title {
         font-size: var(--font-6xl);
     }
 }

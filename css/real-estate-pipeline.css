@@ -1,0 +1,148 @@
+/*
+ * Real Estate Pipeline Component (3-step process)
+ * BEM Methodology
+ * Block: real-estate-pipeline
+ */
+
+/* ===================================
+   Real Estate Pipeline Block
+   =================================== */
+.real-estate-pipeline {
+    padding: 80px 0;
+    background-color: var(--background);
+}
+
+/* Container */
+.real-estate-pipeline__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+}
+
+/* Header */
+.real-estate-pipeline__header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.real-estate-pipeline__title {
+    font-size: var(--font-3xl);
+    font-weight: var(--font-bold);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-4);
+}
+
+.real-estate-pipeline__description {
+    color: var(--muted-foreground);
+    font-size: var(--font-base);
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+/* Grid */
+.real-estate-pipeline__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    max-width: 80rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Connecting Lines */
+.real-estate-pipeline__connector {
+    display: none;
+}
+
+/* Card */
+.real-estate-pipeline__card {
+    background-color: var(--card-background);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-8);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    animation: fade-in 0.6s ease-out;
+}
+
+.real-estate-pipeline__card:nth-child(1) {
+    animation-delay: 0ms;
+}
+
+.real-estate-pipeline__card:nth-child(2) {
+    animation-delay: 200ms;
+    border-color: hsl(254, 76%, 55%, 0.5);
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-lg);
+}
+
+.real-estate-pipeline__card:nth-child(3) {
+    animation-delay: 400ms;
+}
+
+/* Icon Wrapper */
+.real-estate-pipeline__icon-wrapper {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--spacing-4);
+    border-radius: var(--radius-lg);
+    background-color: hsl(254, 76%, 55%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.real-estate-pipeline__card:nth-child(2) .real-estate-pipeline__icon-wrapper {
+    background-color: hsl(254, 76%, 55%, 0.2);
+}
+
+.real-estate-pipeline__icon {
+    width: 32px;
+    height: 32px;
+    color: var(--primary);
+}
+
+/* Card Title */
+.real-estate-pipeline__card-title {
+    font-size: var(--font-xl);
+    font-weight: var(--font-semibold);
+    color: var(--foreground);
+    margin-bottom: var(--spacing-4);
+}
+
+/* Card Description */
+.real-estate-pipeline__card-description {
+    font-size: var(--font-sm);
+    color: var(--muted-foreground);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (min-width: 768px) {
+    .real-estate-pipeline__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .real-estate-pipeline__connector {
+        display: block;
+        position: absolute;
+        top: 50%;
+        height: 2px;
+        background-color: hsl(254, 76%, 55%, 0.2);
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+
+    .real-estate-pipeline__connector:nth-child(2) {
+        left: calc(33.33% + 16px);
+        width: calc(33.33% - 32px);
+    }
+
+    .real-estate-pipeline__connector:nth-child(3) {
+        left: calc(66.66% + 16px);
+        width: calc(33.33% - 32px);
+    }
+}
